@@ -25,6 +25,7 @@
     "examples/with-nuxtjs"
   ],
   "scripts": {
+    "prepack": "rimraf dist && tsc -p tsconfig.build.json",
     "test": "tsc --noEmit && jest --verbose",
     "build": "rimraf dist && tsc -p tsconfig.build.json"
   },
